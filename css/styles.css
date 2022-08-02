@@ -191,6 +191,7 @@ ul {
   background-color: #188ce8;
 }
 /* modal window */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -214,8 +215,66 @@ ul {
   height: 581px;
   background-color: var(--color-white);
   border-radius: 4px;
+
+  padding-top: 40px;
+  padding-left: 41px;
+}
+.form-titel {
+  display: block;
+  width: 448px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-bottom: 12px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
+.modal-form-label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.modal-form-imput {
+  width: 100%;
+}
+.modal-form-group {
+  position: relative;
+}
+.form-svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(12px, -50%);
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn {
+  width: 200px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding: 10px 52px;
+}
 .modal-btn {
   position: absolute;
   top: 8px;
